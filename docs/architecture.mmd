@@ -1,0 +1,8 @@
+flowchart TD
+    A[main.py] --> B[NotificationService]
+    B --> C[NotificationChannel Interface]
+    C --> D[EmailChannel]
+    C --> E[SMSChannel]
+    C --> F[SlackChannel]
+    C --> G[WhatsAppChannel]
+    H[Unit Tests] -.-> B
